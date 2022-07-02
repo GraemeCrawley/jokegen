@@ -6,7 +6,7 @@ import tempfile
 from tqdm import tqdm
 
 BINDIR=os.path.join(os.path.dirname(sys.argv[0]), 'bin')
-TWREMAT=os.path.join(BINDIR, 'twremat')
+TWREMAT=os.path.join(os.getcwd(), '..', 'twremat')
 
 # Allow users to pass 'humanized' memlimit values as strings.
 def parse_memlimit(memlimit):
